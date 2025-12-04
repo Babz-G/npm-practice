@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Boldonse", system-ui;
+  background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 24px;
+  padding: 25px 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 8px rgba(96, 165, 250, 0.3);
+}
+
+.toggle-section,
+.clock-section {
+  background: #334155;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toggle-section:hover,
+.clock-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
+}
+
+.clock-section:last-child {
+  margin-bottom: 0;
+}
+
+.clock-heading {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.clock-section .react-clock {
+  margin: 0 auto;
+  border: 4px solid #60a5fa;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(96, 165, 250, 0.4);
+}
+
+.clock-section .react-clock__hand__body {
+  background-color: #60a5fa;
+}
+
+.clock-section .react-clock__mark__body {
+  background-color: #60a5fa;
+}
+
+.toggle-section h2 {
+  margin-bottom: 20px;
+  color: #60a5fa;
+  font-size: 1.3rem;
+}
+
+.toggle-section label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+.toggle-section p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #f1f5f9;
+}
+.flip-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flip-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.flip-number {
+  background: #1e40af;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 8px;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.flip-number:hover {
+  transform: scale(1.05);
+}
+
+.flip-label {
+  font-size: 0.7rem;
+  color: #60a5fa;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.flip-divider {
+  color: #60a5fa;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 5px;
+}
