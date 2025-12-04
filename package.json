@@ -14,7 +14,10 @@
     "react-clock": "^6.0.0",
     "react-confetti": "^6.4.0",
     "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
+    "react-loading-skeleton": "^3.5.0",
     "react-switch": "^7.1.0",
+    "react-typewriter-effect": "^1.1.0",
     "react-use": "^17.6.0"
   },
   "devDependencies": {

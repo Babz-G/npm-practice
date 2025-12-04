@@ -5,6 +5,7 @@ import "react-clock/dist/Clock.css";
 import Confetti from "./Components/Confetti.jsx";
 import Switch from "react-switch";
 import { useState } from "react";
+import IconDisplay from "./Components/Icons.jsx";
 
 function App() {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -42,6 +43,10 @@ function App() {
           <p>
             Confetti is <span>{showConfetti ? "on" : "off"}</span>.
           </p>
+        </div>
+
+        <div className="toggle-section">
+          <IconDisplay />
         </div>
 
         <div className="clock-section">
