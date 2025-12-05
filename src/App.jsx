@@ -1,7 +1,8 @@
 import "./App.css";
 import Toggle from "./Components/Toggle.jsx";
-import Clock from "./Components/Clock.jsx";
-import "react-clock/dist/Clock.css";
+// import Clock from "./Components/Clock.jsx";
+import ClockComponent from "./Components/Clock.jsx";
+// import "react-clock/dist/Clock.css";
 import Confetti from "./Components/Confetti.jsx";
 import Switch from "react-switch";
 import { useState } from "react";
@@ -49,8 +50,11 @@ function App() {
           <IconDisplay />
         </div>
 
-        <div className="clock-section">
+        {/* <div className="clock-section">
           <Clock />
+        </div> */}
+        <div className="clock-section">
+          <ClockComponent />
         </div>
       </div>
     </>

@@ -1,3 +1,27 @@
+// import { useEffect, useState } from "react";
+// import Clock from "react-clock";
+// import "react-clock/dist/Clock.css";
+
+// function ClockComponent() {
+//   const [value, setValue] = useState(new Date());
+
+//   useEffect(() => {
+//     const interval = setInterval(() => setValue(new Date()), 1000);
+
+//     return () => {
+//       clearInterval(interval);
+//     };
+//   }, []);
+
+//   return (
+//     <div>
+//       <p>Current time:</p>
+//       <Clock value={value} />
+//     </div>
+//   );
+// }
+
+// export default ClockComponent;
 import { useEffect, useState } from "react";
 
 function ClockComponent() {
@@ -14,21 +38,21 @@ function ClockComponent() {
 
   return (
     <div>
-      <h2 className="clock-heading">Current time:</h2>
+      <h2>Current time:</h2>
       <div className="flip-clock">
         <div className="flip-unit">
-          <span className="flip-number">{hours}</span>
-          <span className="flip-label">HOURS</span>
+          <div className="flip-number">{hours}</div>
+          <div className="flip-label">HOURS</div>
         </div>
-        <span className="flip-divider">:</span>
+        <div className="flip-divider">:</div>
         <div className="flip-unit">
-          <span className="flip-number">{minutes}</span>
-          <span className="flip-label">MINUTES</span>
+          <div className="flip-number">{minutes}</div>
+          <div className="flip-label">MINUTES</div>
         </div>
-        <span className="flip-divider">:</span>
+        <div className="flip-divider">:</div>
         <div className="flip-unit">
-          <span className="flip-number">{seconds}</span>
-          <span className="flip-label">SECONDS</span>
+          <div className="flip-number">{seconds}</div>
+          <div className="flip-label">SECONDS</div>
         </div>
       </div>
     </div>
